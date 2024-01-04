@@ -51,8 +51,8 @@ void Game::run(Sudoku9x9 &board) {
                             board[i][j] = 0;
                         }
                     }
-
-                if (SudokuSolver::solveBoard(board)) {
+                SudokuSolver::solveBoard(board);
+                if (board.checkIfSolved()) {
                     RESET_SCREEN
                     std::cout << "Solved!" << std::endl;
                 } else {
