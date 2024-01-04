@@ -2,7 +2,7 @@
 
 // Constructor for the App class
 App::App(int argc, char **argv) {
-    std::cout << CLEAR;
+
     if (argc == 2) {
         // Load game from file if a filename is provided as a command-line argument
         filename = argv[1];
@@ -18,12 +18,14 @@ App::App(int argc, char **argv) {
         // Invalid command line options
         throw std::runtime_error("Wrong command line options");
     }
+    std::cout << CLEAR;
 }
 
 // Run method to handle the main menu and user choices
 void App::run() {
     int choose = 42;
     while (choose != 5) {
+        choose = 42;
         // Display main menu options
         std::cout << "1. Start new game" << std::endl
                   << "2. Load game" << std::endl

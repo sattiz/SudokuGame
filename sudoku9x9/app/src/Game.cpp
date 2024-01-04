@@ -17,6 +17,7 @@ void Game::run(Sudoku9x9 &board) {
 
     // Main game loop
     while (choose != 4) {
+        choose = 42;
         std::cout << "Enter key: ";
         getKey(choose);
         switch (choose) {
@@ -70,10 +71,11 @@ void Game::run(Sudoku9x9 &board) {
                 break;
             case 4:
                 break;
-            default:
+            default: {
                 // Reset the screen to display the updated board and menu
-            RESET_SCREEN
+                RESET_SCREEN
                 std::cout << "Wrong input" << std::endl;
+            }
         }
     }
 
