@@ -170,8 +170,10 @@ void App::saveGame() {
         std::cout << CLEAR;
         std::cout << "Game is saved to file: " << filename << std::endl;
     }
-    else
+    else {
+        std::cout << CLEAR;
         std::cout << "Unable to save game" << std::endl;
+    }
 }
 
 // Method to start the game
