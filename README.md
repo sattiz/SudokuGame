@@ -1014,7 +1014,7 @@ This test suite focuses on the `setCell` functionality of the `Sudoku9x9`. The `
 
 #### 6.1.2.3 `Sudoku9x9_checkRow`
 **Description**
-This test suite verifies the `checkRowT` functionality of the `Sudoku9x9`. The `checkRowT` function checks the validity of rows in the Sudoku board and returns the count of positive and negative values in each row.
+This test suite verifies the `checkRow` functionality of the `Sudoku9x9`. The `checkRow` function checks the validity of rows in the Sudoku board and returns the count of positive and negative values in each row.
 
 **Test Cases**
 1. **Test**: Check rows on a predefined board with mixed positive and negative values.
@@ -1024,7 +1024,7 @@ This test suite verifies the `checkRowT` functionality of the `Sudoku9x9`. The `
 
 #### 6.1.2.4 `Sudoku9x9_checkColumn`
 **Description**
-This test suite focuses on the `checkColumnT` functionality of the `Sudoku9x9`. The `checkColumnT` function checks the validity of columns in the Sudoku board and returns the count of positive and negative values in each column.
+This test suite focuses on the `checkColumn` functionality of the `Sudoku9x9`. The `checkColumn` function checks the validity of columns in the Sudoku board and returns the count of positive and negative values in each column.
 
 **Test Cases**
 1. **Test**: Check columns on a predefined board with mixed positive and negative values.
@@ -1034,7 +1034,7 @@ This test suite focuses on the `checkColumnT` functionality of the `Sudoku9x9`. 
 
 #### 6.1.2.5 `Sudoku9x9_checkSubgrid`
 **Description**
-This test suite verifies the `checkSubgridT` functionality of the `Sudoku9x9`. The `checkSubgridT` function checks the validity of 3x3 subgrids in the Sudoku board and returns the coordinates of conflicting cells if any.
+This test suite verifies the `checkSubgrid` functionality of the `Sudoku9x9`. The `checkSubgrid` function checks the validity of 3x3 subgrids in the Sudoku board and returns the coordinates of conflicting cells if any.
 
 **Test Cases**
 1. **Test**: Check subgrids on a predefined board with mixed positive and negative values.
