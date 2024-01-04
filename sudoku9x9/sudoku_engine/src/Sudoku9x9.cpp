@@ -14,7 +14,7 @@ bool Sudoku9x9::setCell(int row, int column, int val) {
     auto &cell = (*this)[row - 1][column - 1];
 
     // Check if the cell is not empty (non-zero)
-    if (not cell)
+    if (! cell)
         return false;
 
     // Set the value of the cell and return success
@@ -53,7 +53,7 @@ std::pair<int, int> Sudoku9x9::checkRow(int index) {
         int cell_idx = i;
 
         // Check if the cell value is zero
-        if (not cell_val)
+        if (! cell_val)
             return {i + 1, -1}; // If zero, return the index of '0' value and -1
 
         // Check if the cell value is already in the hash map
@@ -81,7 +81,7 @@ std::pair<int, int> Sudoku9x9::checkColumn(int index) {
         int cell_idx = i;
 
         // Check if the cell value is zero
-        if (not cell_val)
+        if (! cell_val)
             return {cell_idx + 1, -1}; // If zero, return the index of '0' value and -1
 
         // Check if the cell value is already in the hash map
@@ -115,7 +115,7 @@ std::tuple<int, int, int, int> Sudoku9x9::checkSubgrid(int index) {
             int cell_val = static_cast<int>((*this)[cell_x_idx][cell_y_idx]);
 
             // Check if the cell value is zero
-            if (not cell_val)
+            if (! cell_val)
                 return {cell_x_idx + 1, cell_y_idx + 1, -1, -1}; // If zero, return the indices of '0' value and -1
 
             // Check if the cell value is already in the hash map

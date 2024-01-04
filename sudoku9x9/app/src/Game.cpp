@@ -23,16 +23,20 @@ void Game::run(Sudoku9x9 &board) {
                 row = -1, col = -1, num = -1;
                 std::cout << "Enter row column number: ";
                 getKey(row, col, num);
-                RESET_SCREEN
-                if (!board.setCell(row, col, num))
-                    std::cout << "Unable to set num" << std::endl;
+                
+                if (!board.setCell(row, col, num)) {
+                    RESET_SCREEN
+                        std::cout << "Unable to set num" << std::endl;
+                }
                 else {
+                    RESET_SCREEN
                     std::cout << "Number " << num << " is set on " << row << ":" << col << std::endl;
                 }
 
                 break;
             case 2:
-            RESET_SCREEN
+                check = board.checkIfSolved();
+                RESET_SCREEN
                 if (check) {
                     std::cout << "Board is solved!" << std::endl;
                 } else {
