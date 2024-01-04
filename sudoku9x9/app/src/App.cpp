@@ -46,8 +46,8 @@ void App::run() {
                 if (is_started)
                     Game::run(board);
                 else {
-                    std::cout << "No game is started" << std::endl;
                     std::cout << CLEAR;
+                    std::cout << "No game is started" << std::endl;
                 }
                 break;
             case 4:
@@ -56,8 +56,8 @@ void App::run() {
             case 5:
                 break;
             default: {
-                std::cout << "Wrong input." << std::endl;
                 std::cout << CLEAR;
+                std::cout << "Wrong input." << std::endl;
             }
         }
     }
