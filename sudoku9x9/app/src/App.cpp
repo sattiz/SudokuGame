@@ -9,7 +9,7 @@ App::App(int argc, char **argv) {
         if (!FileManager::loadFromFile(board, filename))
             throw std::runtime_error("Unable to load from file " + filename);
         std::cout << "Game is loaded from file " << filename << std::endl
-                  << "To start loaded game choose '3. Continue game'" << std::endl;
+        << "To start loaded game choose '3. Continue game'" << std::endl;
         is_started = true;
     } else if (argc == 1) {
         // No filename provided, initialize an empty string

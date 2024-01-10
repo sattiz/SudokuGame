@@ -1,4 +1,5 @@
 #define BOOST_TEST_MODULE SudokuSolverTest
+
 #include <boost/test/included/unit_test.hpp>
 
 #include "SudokuSolver.h"  // Assuming this is the header file containing SudokuSolver class
